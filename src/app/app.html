@@ -1,6 +1,6 @@
 <ons-page>
   <ons-toolbar [attr.modifier]="modifier">
-    <div class="center">Tabbar</div>
+    <div class="center">お薬手帳</div>
   </ons-toolbar>
 
   <div class="content">
@@ -9,7 +9,7 @@
       <div class="tabbar">
         <ons-tab icon="fa-home" label="ホーム" [page]="home" active></ons-tab>
         <ons-tab icon="fa-wrench" label="設定" [page]="setting"></ons-tab>
-        <ons-tab icon="fa-plus" label="追加" [page]="add"></ons-tab>
+        <ons-tab icon="fa-plus" label="追加" (click)="onPlusButtonClick()" [page]="add"></ons-tab>
       </div>
     </ons-tabbar>
   </div>
