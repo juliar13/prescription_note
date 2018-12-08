@@ -1,14 +1,14 @@
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'ons-page[second]',
+  selector: 'ons-page[home]',
   template: `
     <div class="content">
-      <p>I am the second tab.</p>
+      <p>I am the first tab.</p>
     </div>
   `
 })
-export class Second {
+export class Home {
   constructor() {}
 }
 
