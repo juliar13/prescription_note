@@ -11,6 +11,7 @@ import {OnsenModule} from 'ngx-onsenui';
 import {MyApp} from './app/app';
 import {First} from './app/first';
 import {Second} from './app/second';
+import {About} from './app/about';
 
 // Enable production mode when in production mode.
 if (process.env.NODE_ENV === 'production') {
@@ -26,10 +27,12 @@ if (process.env.NODE_ENV === 'production') {
         MyApp,
         First,
         Second,
+        About,
     ],
     entryComponents: [
         First,
         Second,
+        About,
     ],
     bootstrap: [
         MyApp,
