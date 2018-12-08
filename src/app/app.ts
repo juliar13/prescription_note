@@ -1,8 +1,8 @@
 import {Component} from '@angular/core';
 import * as ons from 'onsenui';
 
-import {First} from './first';
-import {Second} from './second';
+import {Home} from './home';
+import {Setting} from './setting';
 
 @Component({
   selector: 'app',
@@ -12,8 +12,8 @@ import {Second} from './second';
   ]
 })
 export class MyApp {
-  first = First;
-  second = Second;
+  home = Home;
+  setting = Setting;
 
   animation = ons.platform.isAndroid() ? 'slide' : 'none';
   modifier = ons.platform.isAndroid() ? 'material noshadow' : '';

@@ -9,8 +9,8 @@ import {HttpModule} from '@angular/http';
 import {OnsenModule} from 'ngx-onsenui';
 
 import {MyApp} from './app/app';
-import {First} from './app/first';
-import {Second} from './app/second';
+import {Home} from './app/home';
+import {Setting} from './app/setting';
 
 // Enable production mode when in production mode.
 if (process.env.NODE_ENV === 'production') {
@@ -24,12 +24,12 @@ if (process.env.NODE_ENV === 'production') {
     ],
     declarations: [
         MyApp,
-        First,
-        Second,
+        Home,
+        Setting,
     ],
     entryComponents: [
-        First,
-        Second,
+        Home,
+        Setting,
     ],
     bootstrap: [
         MyApp,
