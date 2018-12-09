@@ -19,4 +19,15 @@ export class MyApp {
   modifier = ons.platform.isAndroid() ? 'material noshadow' : '';
 
   constructor() {}
+
+  onPlusButtonClick() {
+    navigator.camera.getPicture(
+      (imageURI) => { console.log('image uri', imageURI) },
+      (message) => {console.log('error:', message)},
+      {
+        quality: 50,
+        destinationType: Camera.DestinationType.FILE_URI,
+      }
+    )
+  }
 }

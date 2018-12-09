@@ -20,7 +20,8 @@
     "ngx-onsenui": "~4.2.0",
     "onsenui": "~2.10.0",
     "rxjs": "6.2.0",
-    "zone.js": "0.8.26"
+    "zone.js": "0.8.26",
+    "cordova-plugin-camera": "4.0.1"
   },
   "scripts": {
     "monaca:preview": "npm run dev & npm run watch",
@@ -35,7 +36,11 @@
       "cordova-custom-config": {},
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-whitelist": {},
-      "monaca-plugin-monaca-core": {}
+      "monaca-plugin-monaca-core": {},
+      "cordova-plugin-camera": {
+        "CAMERA_USAGE_DESCRIPTION": "カメラを起動します",
+        "PHOTOLIBRARY_USAGE_DESCRIPTION": "アルバムを起動します"
+      }
     }
   },
   "devDependencies": {
