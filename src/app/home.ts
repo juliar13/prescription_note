@@ -5,5 +5,6 @@ import {Component} from '@angular/core';
   template: require('./home.html')
 })
 export class Home {
+  src: string='/www/assets/img/test.jpeg';
   constructor() {}
 }
