@@ -15,10 +15,11 @@ export class Home {
   title: string='No.1 Date: 2018/12/13';
   memo: string='桜病院での処方';
 
+  // アラートは多分使わないからそのうち消す
   onItemClick(): Void {
     alert('test');
   }
-  
+
   constructor() {}
 
 }
