@@ -9,7 +9,7 @@ import {Component} from '@angular/core';
 })
 export class Home {
 
-  user_image: string='/www/assets/img/test.jpeg';
+  user_image: string='/www/assets/img/user.png';
   big_image: string='/www/assets/img/test.jpeg';
 
   title: string='No.1 Date: 2018/12/13';

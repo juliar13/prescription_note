@@ -4,14 +4,22 @@
   float: left;
 }
 img.thumbnail {
-  width: 40px;
+  width: 100px;
 }
 
 .top-right {
   float: left;
+  margin-left: 15px;
 }
 
 .bottom-center {
+  width: 100%;
+  background-color: #000000;
+  text-align: center;
   clear: left;
-  
+  margin-top: 20px;
+
+}
+img.big_img {
+  width: 100%;
 }
