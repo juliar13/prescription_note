@@ -16,6 +16,7 @@ import {MyApp} from './app/app';
 import {Home} from './app/home';
 import {Setting} from './app/setting';
 import {About} from './app/about';
+import {Pattern0} from './app/pattern0';
 
 // Enable production mode when in production mode.
 if (process.env.NODE_ENV === 'production') {
@@ -32,6 +33,7 @@ if (process.env.NODE_ENV === 'production') {
         Home,
         Setting,
         About,
+        Pattern0,
     ],
     entryComponents: [
         Home,
