@@ -1,1 +1,17 @@
 /* Home CSS */
+
+.top-left {
+  float: left;
+}
+img.thumbnail {
+  width: 40px;
+}
+
+.top-right {
+  float: left;
+}
+
+.bottom-center {
+  clear: left;
+  
+}
