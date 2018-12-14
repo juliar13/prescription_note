@@ -14,7 +14,7 @@ export class Home {
 
   title: string='No.1 Date: 2018/12/13';
   memo: string='桜病院での処方';
-  list: { date: string; memo: string }[] = [
+  lists: { date: string; memo: string }[] = [
 
       {
         date: 'Date: 2018/12/13',
