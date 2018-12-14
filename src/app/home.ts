@@ -2,17 +2,19 @@ import {Component} from '@angular/core';
 
 @Component({
   selector: 'ons-page[home]',
-  template: `
-    <div class="content">
-      <p>I am the first tab.</p>
-      <p> 20181213 1010 yamasaki added</p>
-      <ul>
-        <li> list 1</li>
-        <li> list 2</li>
-      </ul>
-    </div>
-  `
+  template: require('./home.html'),
+  styles: [
+  	'./home.css'
+  ]
 })
 export class Home {
+
+  user_image: string='/www/assets/img/test.jpeg';
+  big_image: string='/www/assets/img/test.jpeg';
+
+  title: string='No.1 Date: 2018/12/13';
+  memo: string='桜病院での処方';
+
   constructor() {}
+
 }
