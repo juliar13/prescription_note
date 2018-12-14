@@ -2,6 +2,10 @@
 require('onsenui/css/onsen-css-components.css');
 require('onsenui/css/onsenui.css');
 
+// Yamasaki added for css application
+require('./app/home.css');
+require('./app/app.css');
+
 // Application code starts here
 import {enableProdMode, NgModule, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
