@@ -1,5 +1,25 @@
 /* Home CSS */
 
+.left-side {
+  height: 100%;
+  margin-right: 15px;
+}
+img.thumbnail2 {
+  width: 60px;
+}
+.list_item_title {
+  margin-top: 0px;
+}
+
+/* ---------------------- */
+
+.top-pattern3 {
+  width: 100%;
+  text-align: center;
+}
+
+/* ---------------------- */
+
 .top-left {
   float: left;
 }
