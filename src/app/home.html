@@ -1,67 +1,21 @@
 <ons-list-header></ons-list-header>
 
-<app-pattern0></app-pattern0>
+<p>pattern 0</p>
 
-<ons-list-item>
+<!-- なぜかngForを使うと＞が表示されてしまう -->
+<ons-list-item *ngFor="let item of lists1">>
   <div class="left-side">
-    <img class="thumbnail2" src="{{user_image}}">
+    <img class="thumbnail2" src="{{item.img1}}">
   </div>
   <div class="right-side">
     <span class="list-item__title">
-      <p class="list_item_title">{{title}}</p>
-      <p class="list_item_memo">{{memo}}</p>
+      <p class="list_item_title">{{item.date_str}}</p>
+      <p class="list_item_memo">{{item.memo_str}}</p>
     </span>
-    <img class="big_img2" src="{{big_image}}" (click)="onItemClick()">
+    <img class="big_img2" src="{{item.img2}}" (click)="onItemClick()">
   </div>
 </ons-list-item>
-<ons-list-item>
-  <div class="left-side">
-    <img class="thumbnail2" src="{{user_image}}">
-  </div>
-  <div class="right-side">
-    <span class="list-item__title">
-      <p class="list_item_title">{{title}}</p>
-      <p class="list_item_memo">{{memo}}</p>
-    </span>
-    <img class="big_img2" src="{{big_image}}" (click)="onItemClick()">
-  </div>
-</ons-list-item>
-<ons-list-item>
-  <div class="left-side">
-    <img class="thumbnail2" src="{{user_image}}">
-  </div>
-  <div class="right-side">
-    <span class="list-item__title">
-      <p class="list_item_title">{{title}}</p>
-      <p class="list_item_memo">{{memo}}</p>
-    </span>
-    <img class="big_img2" src="{{big_image}}" (click)="onItemClick()">
-  </div>
-</ons-list-item>
-<ons-list-item>
-  <div class="left-side">
-    <img class="thumbnail2" src="{{user_image}}">
-  </div>
-  <div class="right-side">
-    <span class="list-item__title">
-      <p class="list_item_title">{{title}}</p>
-      <p class="list_item_memo">{{memo}}</p>
-    </span>
-    <img class="big_img2" src="{{big_image}}" (click)="onItemClick()">
-  </div>
-</ons-list-item>
-<ons-list-item>
-  <div class="left-side">
-    <img class="thumbnail2" src="{{user_image}}">
-  </div>
-  <div class="right-side">
-    <span class="list-item__title">
-      <p class="list_item_title">{{title}}</p>
-      <p class="list_item_memo">{{memo}}</p>
-    </span>
-    <img class="big_img2" src="{{big_image}}" (click)="onItemClick()">
-  </div>
-</ons-list-item>
+
 <ons-list-item>
   <div class="left-side">
     <img class="thumbnail2" src="{{user_image}}">
@@ -76,7 +30,8 @@
 </ons-list-item>
 
 
-<hr />
+<!-- --------------- -->
+
 
 <p>pattern 1</p>
 
