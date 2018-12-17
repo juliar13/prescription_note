@@ -38,103 +38,18 @@
 <hr />
 
 
-<ons-list-item>
+<ons-list-item *ngFor="let item of lists2">
   <div class="top-left">
-    <img class="thumbnail" src="{{user_image}}">
+    <img class="thumbnail" src="{{item.img1}}">
   </div>
   <div class="top-right">
     <span class="list-item__title">
-      <p>{{title}}</p>
-      <p>{{memo}}</p>
+      <p>{{item.date_str}}</p>
+      <p>{{item.memo_str}}</p>
     </span>
   </div>
   <div class="bottom-center">
-    <img class="big_img" src="{{big_image}}" (click)="onItemClick()">
-  </div>
-</ons-list-item>
-
-<ons-list-item>
-  <div class="top-left">
-    <img class="thumbnail" src="{{user_image}}">
-  </div>
-  <div class="top-right">
-    <span class="list-item__title">
-      <p>{{title}}</p>
-      <p>{{memo}}</p>
-    </span>
-  </div>
-  <div class="bottom-center">
-    <img class="big_img" src="{{big_image}}">
-  </div>
-</ons-list-item>
-<ons-list-item>
-  <div class="top-left">
-    <img class="thumbnail" src="{{user_image}}">
-  </div>
-  <div class="top-right">
-    <span class="list-item__title">
-      <p>{{title}}</p>
-      <p>{{memo}}</p>
-    </span>
-  </div>
-  <div class="bottom-center">
-    <img class="big_img" src="{{big_image}}">
-  </div>
-</ons-list-item>
-<ons-list-item>
-  <div class="top-left">
-    <img class="thumbnail" src="{{user_image}}">
-  </div>
-  <div class="top-right">
-    <span class="list-item__title">
-      <p>{{title}}</p>
-      <p>{{memo}}</p>
-    </span>
-  </div>
-  <div class="bottom-center">
-    <img class="big_img" src="{{big_image}}">
-  </div>
-</ons-list-item>
-<ons-list-item>
-  <div class="top-left">
-    <img class="thumbnail" src="{{user_image}}">
-  </div>
-  <div class="top-right">
-    <span class="list-item__title">
-      <p>{{title}}</p>
-      <p>{{memo}}</p>
-    </span>
-  </div>
-  <div class="bottom-center">
-    <img class="big_img" src="{{big_image}}">
-  </div>
-</ons-list-item>
-<ons-list-item>
-  <div class="top-left">
-    <img class="thumbnail" src="{{user_image}}">
-  </div>
-  <div class="top-right">
-    <span class="list-item__title">
-      <p>{{title}}</p>
-      <p>{{memo}}</p>
-    </span>
-  </div>
-  <div class="bottom-center">
-    <img class="big_img" src="{{big_image}}">
-  </div>
-</ons-list-item>
-<ons-list-item>
-  <div class="top-left">
-    <img class="thumbnail" src="{{user_image}}">
-  </div>
-  <div class="top-right">
-    <span class="list-item__title">
-      <p>{{title}}</p>
-      <p>{{memo}}</p>
-    </span>
-  </div>
-  <div class="bottom-center">
-    <img class="big_img" src="{{big_image}}">
+    <img class="big_img" src="{{item.img2}}" (click)="onItemClick()">
   </div>
 </ons-list-item>
 
