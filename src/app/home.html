@@ -1,5 +1,17 @@
 <ons-list-header></ons-list-header>
 
+<div>
+  <button (click)="dec_img()" title="smaller">-</button>
+  <button (click)="inc_img()" title="bigger">+</button>
+  <img src={{user_image}} [style.height.px]="height_size" />
+</div>
+
+<div>
+  <button (click)="dec()" title="smaller">-</button>
+  <button (click)="inc()" title="bigger">+</button>
+  <label [style.font-size.px]="size">FontSize: {{size}}px</label>
+</div>
+
 <p>pattern 0</p>
 
 <!-- なぜかngForを使うと＞が表示されてしまう -->

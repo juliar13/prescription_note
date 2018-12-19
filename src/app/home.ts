@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component,EventEmitter,Input,Output} from '@angular/core';
 
 @Component({
   selector: 'ons-page[home]',
@@ -8,6 +8,31 @@ import {Component} from '@angular/core';
   ]
 })
 export class Home {
+
+@Input()  size: number | string;
+@Output() sizeChange = new EventEmitter<number>();
+
+@Input() height_size: number | string;
+@Output() heightChange = new EventEmitter<number>();
+
+dec_img() { this.resizeHeight(-100); }
+inc_img() { this.resizeHeight(+100); }
+
+height_size=100;
+size=10;
+
+dec() { this.resize(-1); }
+inc() { this.resize(+1); }
+
+resizeHeight(delta: number){
+  this.height_size = this.height_size+delta;
+  this.heightChange.emit(this.height_size);
+}
+
+resize(delta: number) {
+  this.size = Math.min(40, Math.max(8, +this.size + delta));
+  this.sizeChange.emit(this.size);
+}
 
   user_image: string='/www/assets/img/user.png';
   big_image: string='/www/assets/img/test.jpeg';
