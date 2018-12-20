@@ -13,7 +13,7 @@
 <p>pattern 0</p>
 
 <!-- なぜかngForを使うと＞が表示されてしまう -->
-<ons-list-item *ngFor="let item of lists1">>
+<!-- <ons-list-item *ngFor="let item of lists1">>
   <div class="left-side">
     <img class="thumbnail2" src="{{item.img1}}">
   </div>
@@ -24,7 +24,9 @@
     </span>
     <img class="big_img2" src="{{item.img2}}" (click)="onItemClick()">
   </div>
-</ons-list-item>
+</ons-list-item> -->
+
+<app-pattern0></app-pattern0>
 
 <ons-list-item>
   <div class="left-side">
@@ -39,16 +41,13 @@
   </div>
 </ons-list-item>
 
-
 <!-- --------------- -->
 
-
 <p>pattern 1</p>
-
 <hr />
+<app-pattern1></app-pattern1>
 
-
-<ons-list-item *ngFor="let item of lists2">
+<!-- <ons-list-item *ngFor="let item of lists2">
   <div class="top-left">
     <img class="thumbnail" src="{{item.img1}}">
   </div>
@@ -61,20 +60,17 @@
   <div class="bottom-center">
     <img class="big_img" src="{{item.img2}}" (click)="onItemClick()">
   </div>
-</ons-list-item>
+</ons-list-item> -->
 
 
 <!-- --------------- -->
 
-
 <hr />
-
 Pattern 2
-
 <hr />
+<app-pattern2></app-pattern2>
 
-
-<ons-list-item expandable *ngFor="let item of lists3">
+<!-- <ons-list-item expandable *ngFor="let item of lists3">
   <div class="left">
     <img class="list-item__thumbnail" src="{{item.img1}}">
   </div>
@@ -85,7 +81,7 @@ Pattern 2
   <div class="expandable-content">
     <img class="expandable-img" src="{{item.img2}}">
   </div>
-</ons-list-item>
+</ons-list-item> -->
 
 
 <!-- --------------- -->
@@ -93,8 +89,9 @@ Pattern 2
 <hr />
 <p>pattern 3</p>
 <hr />
+<app-pattern3></app-pattern3>
 
-<ons-list-item *ngFor="let item of lists4">
+<!-- <ons-list-item *ngFor="let item of lists4">
   <div class="top-pattern3">
     <span class="list-item__title">
       <p class="list_item_title">{{item.date_str}}</p>
@@ -102,4 +99,4 @@ Pattern 2
     </span>
     <img class="big_img2" src="{{item.img2}}" (click)="onItemClick()">
   </div>
-</ons-list-item>
+</ons-list-item> -->
