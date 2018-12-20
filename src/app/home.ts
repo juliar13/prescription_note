@@ -46,11 +46,6 @@ export class Home {
   lists3 = LIST;
   lists4 = LIST;
 
-  // アラートは多分使わないからそのうち消す
-  onItemClick(): Void {
-    alert('test');
-  }
-
   constructor() {}
 
 }

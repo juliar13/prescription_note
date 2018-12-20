@@ -14,11 +14,14 @@ import {LIST} from './list';
         <p class="list_item_title">{{item.date_str}}</p>
         <p class="list_item_memo">{{item.memo_str}}</p>
       </span>
-      <img class="big_img2" src="{{item.img2}}" (click)="onItemClick()">
+      <img class="big_img2" src="{{item.img2}}">
     </div>
   </ons-list-item>
   <p>test</p>
-  `
+  `,
+  styles: [
+  	'./pattern0.css'
+  ]
 })
 export class Pattern0 {
 

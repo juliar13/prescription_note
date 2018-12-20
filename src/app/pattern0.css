@@ -1,0 +1,10 @@
+/* pattern0 CSS */
+
+img.big_img2 {
+  transition: 1s;
+  -webkit-transition: 1s;
+}
+
+img.big_img2:hover{
+  transform: scale(1.4);
+}

@@ -5,6 +5,7 @@ require('onsenui/css/onsenui.css');
 // Yamasaki added for css application
 require('./app/home.css');
 require('./app/app.css');
+require('./app/pattern0.css');
 
 // Application code starts here
 import {enableProdMode, NgModule, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
