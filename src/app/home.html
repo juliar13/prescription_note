@@ -1,9 +1,7 @@
 <ons-list-header></ons-list-header>
 
 <div>
-  <button (click)="dec_img()" title="smaller">-</button>
-  <button (click)="inc_img()" title="bigger">+</button>
-  <img src={{user_image}} [style.height.px]="height_size" />
+  <img (click)="inc_img()" src={{user_image}} [style.height.px]="height_size" />
 </div>
 
 <div>
