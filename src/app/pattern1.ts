@@ -4,6 +4,7 @@ import {LIST} from './list';
 @Component({
   selector: 'app-pattern1',
   template: `
+  <p>pattern 1</p>
   <ons-list-item *ngFor="let item of lists2">
     <div class="top-left">
       <img class="thumbnail" src="{{item.img1}}">

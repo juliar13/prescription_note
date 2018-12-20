@@ -3,7 +3,8 @@ import {LIST} from './list';
 
 @Component({
   selector: 'app-pattern3',
-  template: `
+  template: `0
+  <p>pattern 3</p>
   <ons-list-item *ngFor="let item of lists4">
     <div class="top-pattern3">
       <span class="list-item__title">

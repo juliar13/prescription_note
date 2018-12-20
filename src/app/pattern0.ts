@@ -4,7 +4,7 @@ import {LIST} from './list';
 @Component({
   selector: 'app-pattern0',
   template: `
-  <p>test</p>
+  <p>pattern 0</p>
   <ons-list-item *ngFor="let item of lists1">
     <div class="left-side">
       <img class="thumbnail2" src="{{item.img1}}">
@@ -17,7 +17,6 @@ import {LIST} from './list';
       <img class="big_img2" src="{{item.img2}}">
     </div>
   </ons-list-item>
-  <p>test</p>
   `,
   styles: [
   	'./pattern0.css'
