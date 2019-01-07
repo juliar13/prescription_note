@@ -3,11 +3,11 @@
   text-align:center;
 }
 
-.content .version{
+.version,.release-note{
   margin-bottom:2rem;
   text-align: center;
 }
 
-.content .version .heading{
+.heading{
   font-weight: bold;
 }
