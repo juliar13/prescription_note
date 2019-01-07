@@ -95,6 +95,42 @@ export class Home {
       memo_str: '桜病院fs;afj;jfafでの処方',
       img2: '/www/assets/img/test.jpeg',
     },
+    {
+      img1: '/www/assets/img/user.png',
+      date_str: 'No.4 Date: 2018/12/13',
+      memo_str: '桜病院fs;afj;jfafでの処方',
+      img2: '/www/assets/img/test.jpeg',
+    },
+    {
+      img1: '/www/assets/img/user.png',
+      date_str: 'No.4 Date: 2018/12/13',
+      memo_str: '桜病院fs;afj;jfafでの処方',
+      img2: '/www/assets/img/test.jpeg',
+    },
+    {
+      img1: '/www/assets/img/user.png',
+      date_str: 'No.4 Date: 2018/12/13',
+      memo_str: '桜病院fs;afj;jfafでの処方',
+      img2: '/www/assets/img/test.jpeg',
+    },
+    {
+      img1: '/www/assets/img/user.png',
+      date_str: 'No.4 Date: 2018/12/13',
+      memo_str: '桜病院fs;afj;jfafでの処方',
+      img2: '/www/assets/img/test.jpeg',
+    },
+    {
+      img1: '/www/assets/img/user.png',
+      date_str: 'No.4 Date: 2018/12/13',
+      memo_str: '桜病院fs;afj;jfafでの処方',
+      img2: '/www/assets/img/test.jpeg',
+    },
+    {
+      img1: '/www/assets/img/user.png',
+      date_str: 'No.4 Date: 2018/12/13',
+      memo_str: '桜病院fs;afj;jfafでの処方',
+      img2: '/www/assets/img/test.jpeg',
+    },
   ];
 
   lists4: {img1: string, date_str: string, memo_str: string, img2: string}[]=[

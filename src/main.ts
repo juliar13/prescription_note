@@ -14,7 +14,6 @@ import {OnsenModule} from 'ngx-onsenui';
 
 import {MyApp} from './app/app';
 import {Home} from './app/home';
-import {Pattern0} from './app/pattern0';
 import {Setting} from './app/setting/setting';
 import {SettingMain} from './app/setting/setting-main';
 import {About} from './app/setting/about';
@@ -36,7 +35,6 @@ if (process.env.NODE_ENV === 'production') {
         Setting,
         SettingMain,
         About,
-        Pattern0,
         MainTab,
     ],
     entryComponents: [
