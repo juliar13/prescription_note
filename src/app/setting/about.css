@@ -1,0 +1,13 @@
+/* About CSS */
+.center{
+  text-align:center;
+}
+
+.content .version{
+  margin-bottom:2rem;
+  text-align: center;
+}
+
+.content .version .heading{
+  font-weight: bold;
+}

@@ -3,7 +3,8 @@ import {OnsNavigator} from 'ngx-onsenui';
 
 @Component({
   selector: 'ons-page[about]',
-  template: require('./about.html')
+  template: require('./about.html'),
+  styles: ['./about.css']
 })
 export class About {
   constructor(

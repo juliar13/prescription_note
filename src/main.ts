@@ -2,6 +2,9 @@
 require('onsenui/css/onsen-css-components.css');
 require('onsenui/css/onsenui.css');
 
+// Mizoguchi added for css application
+require('./app/setting/about.css');
+
 // Application code starts here
 import {enableProdMode, NgModule, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
