@@ -1,9 +1,9 @@
 import {Component} from '@angular/core';
-import {PrescriptionRecordRepository} from '../service/prescription-record.repository';
+import {PrescriptionRecordRepository} from '../../service/prescription-record.repository';
 
 @Component({
   selector: 'ons-page[home]',
-  templateUrl: 'src/app/home.html',
+  templateUrl: 'src/app/home/home.html',
   styles: [
   	'./home.css'
   ]

@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import * as ons from 'onsenui';
 
-import {Home} from './home';
+import {Home} from './home/home';
 import {Setting} from './setting/setting';
 
 @Component({
@@ -28,4 +28,3 @@ export class MainTab {
     )
   }
 }
-

@@ -3,7 +3,7 @@ require('onsenui/css/onsen-css-components.css');
 require('onsenui/css/onsenui.css');
 
 // Yamasaki added for css application
-require('./app/home.css');
+require('./app/home/home.css');
 require('./app/app.css');
 
 // Application code starts here
@@ -13,7 +13,7 @@ import {HttpModule} from '@angular/http';
 import {OnsenModule} from 'ngx-onsenui';
 
 import {MyApp} from './app/app';
-import {Home} from './app/home';
+import {Home} from './app/home/home';
 import {Setting} from './app/setting/setting';
 import {SettingMain} from './app/setting/setting-main';
 import {About} from './app/setting/about';
