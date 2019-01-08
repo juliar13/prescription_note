@@ -14,6 +14,8 @@ import {OnsenModule} from 'ngx-onsenui';
 
 import {MyApp} from './app/app';
 import {Home} from './app/home/home';
+import {HomeMain} from './app/home/home-main';
+import {Preview} from './app/home/preview';
 import {Setting} from './app/setting/setting';
 import {SettingMain} from './app/setting/setting-main';
 import {About} from './app/setting/about';
@@ -32,6 +34,8 @@ if (process.env.NODE_ENV === 'production') {
     declarations: [
         MyApp,
         Home,
+        HomeMain,
+        Preview,
         Setting,
         SettingMain,
         About,
@@ -39,6 +43,8 @@ if (process.env.NODE_ENV === 'production') {
     ],
     entryComponents: [
         Home,
+        HomeMain,
+        Preview,
         Setting,
         SettingMain,
         About,

@@ -1,5 +1,7 @@
 import {Component} from '@angular/core';
 import {PrescriptionRecordRepository} from '../../service/prescription-record.repository';
+import {OnsNavigator} from 'ngx-onsenui'
+import {Preview} from './preview'
 
 @Component({
   selector: 'ons-page[home]',
@@ -9,6 +11,10 @@ import {PrescriptionRecordRepository} from '../../service/prescription-record.re
   ]
 })
 export class Home {
+
+  onListClicked() {
+    this._navigator.element.pushPage(Preview, {animation: 'lift'});
+  }
 
   user_image: string='/www/assets/img/user.png';
   big_image: string='/www/assets/img/test.jpeg';
@@ -166,6 +172,7 @@ export class Home {
   }
 
   constructor(
+    private _navigator: OnsNavigator,
     private _prescriptionRecordRepository: PrescriptionRecordRepository,
   ) {
     Promise.resolve()
