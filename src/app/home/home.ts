@@ -13,6 +13,7 @@ import {Preview} from './preview'
 export class Home {
 
   onListClicked() {
+    console.log("List Clicked");
     this._navigator.element.pushPage(Preview, {animation: 'lift'});
   }
 

@@ -5,6 +5,7 @@ require('onsenui/css/onsenui.css');
 // Yamasaki added for css application
 require('./app/home/home.css');
 require('./app/home/preview.css');
+require('./app/home/edit.css');
 require('./app/app.css');
 
 // Application code starts here
@@ -17,6 +18,7 @@ import {MyApp} from './app/app';
 import {Home} from './app/home/home';
 import {HomeMain} from './app/home/home-main';
 import {Preview} from './app/home/preview';
+import {Edit} from './app/home/edit';
 import {Setting} from './app/setting/setting';
 import {SettingMain} from './app/setting/setting-main';
 import {About} from './app/setting/about';
@@ -37,6 +39,7 @@ if (process.env.NODE_ENV === 'production') {
         Home,
         HomeMain,
         Preview,
+        Edit,
         Setting,
         SettingMain,
         About,
@@ -46,6 +49,7 @@ if (process.env.NODE_ENV === 'production') {
         Home,
         HomeMain,
         Preview,
+        Edit,
         Setting,
         SettingMain,
         About,
