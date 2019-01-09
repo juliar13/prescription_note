@@ -4,10 +4,11 @@ import {OnsNavigator} from 'ngx-onsenui'
 @Component({
   selector: 'ons-page[preview]',
   template: `
-    <p>test preview</p>
+    <p (click)="onCloseClicked()">test preview</p>
+
   `,
   styles: [
-  	'./home.css'
+  	'./preview.css'
   ]
 })
 export class Preview {
@@ -15,5 +16,9 @@ export class Preview {
     constructor(
       private _navigator: OnsNavigator,
     ) {}
+
+    onCloseClicked() {
+      this._navigator.element.popPage();
+    }
 
 }
