@@ -1,5 +1,5 @@
-import {Component} from '@angular/core';
-import {PrescriptionRecordRepository} from '../../service/prescription-record.repository';
+import {Component} from '@angular/core'
+import {PrescriptionRecordRepository} from '../../service/prescription-record.repository'
 import {OnsNavigator} from 'ngx-onsenui'
 import {Preview} from './preview'
 
