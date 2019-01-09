@@ -1,5 +1,5 @@
 import {Component} from '@angular/core'
-import {OnsNavigator} from 'ngx-onsenui'
+import {OnsNavigator, Params} from 'ngx-onsenui'
 
 @Component({
   selector: 'ons-page[preview]',
@@ -10,9 +10,15 @@ import {OnsNavigator} from 'ngx-onsenui'
 })
 export class Edit {
 
+    num: number;
+
     constructor(
       private _navigator: OnsNavigator,
-    ) {}
+      private params: Params,
+    ) {
+      this.num = params.data;
+      console.log(params.data);
+    }
 
     onCloseClicked() {
       console.log("Back Button Clicked");

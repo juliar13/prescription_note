@@ -11,16 +11,19 @@ import {Edit} from './edit'
 })
 export class Preview {
 
+    num: number;
+
     constructor(
       private _navigator: OnsNavigator,
       private params: Params
     ) {
+      this.num = params.data;
       console.log(params.data);
     }
 
     onEditClicked() {
       console.log("Edit Button Clicked");
-      this._navigator.element.pushPage(Edit, {animation: 'lift'});
+      this._navigator.element.pushPage(Edit, {animation: 'lift', data: this.num, }, );
     }
 
     onCloseClicked() {
