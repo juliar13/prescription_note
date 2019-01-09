@@ -1,7 +1,21 @@
 <ons-list-header></ons-list-header>
 
-<p (click)="onCloseClicked()">Back(タッチで戻る)</p>
-<p (click)="onEditClicked()">Edit(タッチで編集画面に遷移)</p>
+<p (click)="onCloseClicked()">
+  <ons-icon
+  icon="fa-backward"
+  size="30px"
+  fixed-width="false"
+  style="color: red">
+  </ons-icon>
+</p>
+<p (click)="onEditClicked()">
+  <ons-icon
+  icon="fa-edit"
+  size="30px"
+  fixed-width="false"
+  style="color: red">
+  </ons-icon>
+</p>
 
 <p>clicked number is {{num}} !</p>
 
