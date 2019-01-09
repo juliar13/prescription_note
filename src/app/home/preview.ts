@@ -3,10 +3,7 @@ import {OnsNavigator} from 'ngx-onsenui'
 
 @Component({
   selector: 'ons-page[preview]',
-  template: `
-    <p (click)="onCloseClicked()">test preview</p>
-
-  `,
+  templateUrl: 'src/app/home/preview.html',
   styles: [
   	'./preview.css'
   ]
