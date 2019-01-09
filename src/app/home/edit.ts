@@ -3,7 +3,7 @@ import {OnsNavigator} from 'ngx-onsenui'
 
 @Component({
   selector: 'ons-page[preview]',
-  templateUrl: 'src/app/home/edit.html',:// WARNING:
+  templateUrl: 'src/app/home/edit.html',
   styles: [
   	'./edit.css'
   ]
