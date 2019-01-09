@@ -1,5 +1,5 @@
 import {Component} from '@angular/core'
-import {OnsNavigator} from 'ngx-onsenui'
+import {OnsNavigator, Params} from 'ngx-onsenui'
 import {Edit} from './edit'
 
 @Component({
@@ -13,7 +13,10 @@ export class Preview {
 
     constructor(
       private _navigator: OnsNavigator,
-    ) {}
+      private params: Params
+    ) {
+      console.log(params.data);
+    }
 
     onEditClicked() {
       console.log("Edit Button Clicked");

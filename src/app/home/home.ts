@@ -12,9 +12,9 @@ import {Preview} from './preview'
 })
 export class Home {
 
-  onListClicked() {
-    console.log("List Clicked");
-    this._navigator.element.pushPage(Preview, {animation: 'lift'});
+  onListClicked(num) {
+    console.log("No." + num + " List Clicked");
+    this._navigator.element.pushPage(Preview, {animation: 'lift', data: 1, }, );
   }
 
   user_image: string='/www/assets/img/user.png';
