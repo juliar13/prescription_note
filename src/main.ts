@@ -4,7 +4,7 @@ require('onsenui/css/onsenui.css');
 
 // Yamasaki added for css application
 require('./app/home/home.css');
-require('./app.home/preview.css');
+require('./app/home/preview.css');
 require('./app/app.css');
 
 // Application code starts here
