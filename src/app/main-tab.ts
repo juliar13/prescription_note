@@ -23,7 +23,7 @@ export class MainTab {
       (message) => {console.log('error:', message)},
       {
         quality: 50,
-        destinationType: Camera.DestinationType.FILE_URI,
+        destinationType: Camera.DestinationType.DATA_URL,
       }
     )
   }
