@@ -6,13 +6,7 @@
 
 <hr />
 
-<!-- これは動くがngForが動かない -->
-<p>{{list3[0].date_str}}</p>
-<p>{{list3[0].memo_str}}</p>
-<p>{{list3[1].date_str}}</p>
-<img src="{{list3[0].img2}}" (click)="onListClicked(1)">
-
-<ons-list-item expandable *ngFor="let item of lists3">
+<ons-list-item expandable *ngFor="let item of list3">
   <div class="left">
     <img class="list-item__thumbnail" src="{{item.img1}}">
   </div>
@@ -24,6 +18,3 @@
     <img class="expandable-img" src="{{item.img2}}" (click)="onListClicked(1)">
   </div>
 </ons-list-item>
-
-{{list3[0].date_str}}
-{{list3[1].date_str}}
