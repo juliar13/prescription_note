@@ -16,6 +16,7 @@ import {Home} from './app/home';
 import {Setting} from './app/setting/setting';
 import {SettingMain} from './app/setting/setting-main';
 import {About} from './app/setting/about';
+import {Account} from './app/setting/account';
 import {MainTab} from './app/main-tab';
 
 // Enable production mode when in production mode.
@@ -35,6 +36,7 @@ if (process.env.NODE_ENV === 'production') {
         SettingMain,
         About,
         MainTab,
+        Account,
     ],
     entryComponents: [
         Home,
@@ -42,6 +44,7 @@ if (process.env.NODE_ENV === 'production') {
         SettingMain,
         About,
         MainTab,
+        Account,
     ],
     bootstrap: [
         MyApp,

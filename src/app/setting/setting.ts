@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {OnsNavigator} from 'ngx-onsenui'
 import {About} from './about';
+import {Account} from './account';
 
 @Component({
   selector: 'ons-page[setting]',
@@ -14,5 +15,9 @@ export class Setting {
 
   onAboutClicked() {
     this._navigator.element.pushPage(About, {animation: 'simpleslide'});
+  }
+
+  onAccountButtonClicked() {
+    this._navigator.element.pushPage(Account, {animation: 'simpleslide'});
   }
 }
