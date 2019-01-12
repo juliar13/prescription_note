@@ -17,17 +17,6 @@ export class Preview {
 
     get_list: ListData[] = Datas;
 
-    /*
-    get_list: {img1: string, date_str: string, memo_str: string, img2: string}[]=[
-      {
-        img1: '/www/assets/img/user.png',
-        date_str: 'No.1 Date: 2018/12/13',
-        memo_str: 'メモテスト',
-        img2: '/www/assets/img/test.jpeg',
-      },
-    ];
-    */
-
     constructor(
       private _navigator: OnsNavigator,
       private params: Params
@@ -49,7 +38,7 @@ export class Preview {
 
     onEditClicked() {
       console.log("Edit Button Clicked");
-      this._navigator.element.pushPage(Edit, {animation: 'lift', data: this.num, }, );
+      this._navigator.element.pushPage(Edit, {animation: 'simpleslide', data: this.num, }, );
     }
 
     onCloseClicked() {

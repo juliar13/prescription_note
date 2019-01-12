@@ -26,25 +26,21 @@ export class Edit {
     }
 
     onCloseClicked() {
-      console.log("Back Button Clicked");
       this._navigator.element.popPage();
     }
 
     // 画像をタッチした時に呼び出される
     onImgChange() {
-      console.log("onImgChange");
       // 写真撮影かアルバムからか選択する画面を出す
       this.shootOrAlbum();
     }
 
     shootOrAlbum() {
-      console.log("shootOrAlbum");
       ons.notification.alert('撮影かアルバム画面になる');
     }
 
     // 登録完了ボタンタッチで呼び出される
     onEditEndClicked() {
-      console.log("Registration Button Clicked");
       let toast_timeout = 2000; // 2000msec
       var registration_success = true;
       if (registration_success = true) {
