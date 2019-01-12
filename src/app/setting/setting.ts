@@ -13,6 +13,6 @@ export class Setting {
   ) {}
 
   onAboutClicked() {
-    this._navigator.element.pushPage(About, {animation: 'lift'});
+    this._navigator.element.pushPage(About, {animation: 'simpleslide'});
   }
 }
