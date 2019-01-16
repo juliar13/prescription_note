@@ -22,7 +22,7 @@ import {Edit} from './app/home/edit';
 import {Setting} from './app/setting/setting';
 import {SettingMain} from './app/setting/setting-main';
 import {About} from './app/setting/about';
-import {InquiryComponent} from './app/setting/inquiry';
+import {Account} from './app/setting/account';
 import {MainTab} from './app/main-tab';
 
 // Enable production mode when in production mode.
@@ -45,7 +45,7 @@ if (process.env.NODE_ENV === 'production') {
         SettingMain,
         About,
         MainTab,
-        InquiryComponent,
+        Account,
     ],
     entryComponents: [
         Home,
@@ -56,7 +56,7 @@ if (process.env.NODE_ENV === 'production') {
         SettingMain,
         About,
         MainTab,
-        InquiryComponent,
+        Account,
     ],
     bootstrap: [
         MyApp,
