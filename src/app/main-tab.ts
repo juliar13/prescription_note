@@ -47,7 +47,7 @@ export class MainTab {
         this._prescriptionRecordRepository.addRecord({
           id: null,
           createdDate: new Date().toISOString(),
-          updatedDate: new Date(2017, 12, 13).toISOString(),
+          updatedDate: new Date().toISOString(),
           imagePath: imageURI,
           note: '',
         }))
