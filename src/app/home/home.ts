@@ -14,6 +14,7 @@ import {ListDatas} from './list_data_sample'
 })
 export class Home {
 
+  selectedItem: ListData;
   list3: ListData[] = ListDatas;
 
   user_image: string='/www/assets/img/user.png';
@@ -55,9 +56,10 @@ export class Home {
       .catch(error => console.log('error', error))
   }
 
-  onListClicked(num) {
-    console.log("No." + num + " List Clicked");
-    this._navigator.element.pushPage(Preview, {animation: 'simpleslide', data: 1, }, );
+  onListClicked(item) {
+    console.log("No." + item.date_str + " List Clicked");
+    this.selectedItem = item;
+    this._navigator.element.pushPage(Preview, {animation: 'simpleslide', data: item, }, );
   }
 
 }

@@ -22,7 +22,7 @@ export class Preview {
       private params: Params
     ) {
       this.num = params.data;
-      console.log(params.data);
+      console.log("params.data : " + params.data.date_str);
       this.get_data_from_db_table();
     }
 
