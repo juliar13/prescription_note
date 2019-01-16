@@ -53,14 +53,18 @@ export class Edit {
     // 登録完了ボタンタッチで呼び出される
     onEditEndClicked() {
       let toast_timeout = 2000; // 2000msec
-      var registration_success = true;
-      if (registration_success = true) {
+      let registration_success: Boolean = this.database_change();
+      if (registration_success == true) {
         ons.notification.toast('Registration Success !!', {timeout: toast_timeout});
       } else {
         // 今はこちらは表示されないようにしてある
         ons.notification.toast('Registration Failed ...', {timeout: toast_timeout});
       }
+    }
 
+    database_change():Boolean {
+      console.log('database_changing...');
+      return true;
     }
 
 }
