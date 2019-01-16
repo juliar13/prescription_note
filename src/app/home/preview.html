@@ -1,21 +1,26 @@
-<ons-list-header></ons-list-header>
-
-<p (click)="onCloseClicked()">
-  <ons-icon
-  icon="fa-backward"
-  size="30px"
-  fixed-width="false"
-  style="color: red">
-  </ons-icon>
-</p>
-<p (click)="onEditClicked()">
-  <ons-icon
-  icon="fa-edit"
-  size="30px"
-  fixed-width="false"
-  style="color: red">
-  </ons-icon>
-</p>
+<ons-toolbar [attr.modifier]="modifier">
+  <div class="left" (click)="onCloseClicked()">
+    <ons-toolbar-button>
+      <ons-icon
+      icon="fa-backward"
+      size="30px"
+      fixed-width="false"
+      style="color: red">
+      </ons-icon>
+    </ons-toolbar-button>
+  </div>
+  <div class="center">preview.html header</div>
+  <div class="right" (click)="onEditClicked()">
+    <ons-toolbar-button>
+      <ons-icon
+      icon="fa-edit"
+      size="30px"
+      fixed-width="false"
+      style="color: red">
+      </ons-icon>
+    </ons-toolbar-button>
+  </div>
+</ons-toolbar>
 
 <p>clicked number is {{num}} !</p>
 

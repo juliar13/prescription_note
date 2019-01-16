@@ -1,13 +1,16 @@
-<p (click)="onCloseClicked()">
-  <ons-icon
-  icon="fa-backward"
-  size="30px"
-  fixed-width="false"
-  style="color: red">
-  </ons-icon>
-</p>
-
-<p>編集画面</p>
+<ons-toolbar [attr.modifier]="modifier">
+  <div class="left" (click)="onCloseClicked()">
+    <ons-toolbar-button>
+      <ons-icon
+      icon="fa-backward"
+      size="30px"
+      fixed-width="false"
+      style="color: red">
+      </ons-icon>
+    </ons-toolbar-button>
+  </div>
+  <div class="center">edit.html header</div>
+</ons-toolbar>
 
 <p>
 <label>Date:
