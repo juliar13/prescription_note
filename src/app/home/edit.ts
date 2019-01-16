@@ -13,16 +13,27 @@ import * as ons from 'onsenui';
 })
 export class Edit {
 
-    num: number;
 
+    item: ListData[];
     get_list: ListData[] = Datas;
 
     constructor(
       private _navigator: OnsNavigator,
-      private params: Params,
+      private params: Params
     ) {
-      this.num = params.data;
-      console.log(params.data);
+      this.item = params.data;
+      console.log("params.data : " + this.item.date_str);
+      this.get_data_from_db_table(this.item);
+    }
+
+    // preview.tsでも流用
+    get_data_from_db_table(item) {
+      console.log("get_data_from_db_table");
+      // itemからtableの情報を取ってきて代入してHTMLに表示
+      this.get_list.img1 = item.img1;
+      this.get_list.date_str = item.date_str;
+      this.get_list.memo_str = item.memo_str;
+      this.get_list.img2 = item.img2;
     }
 
     onCloseClicked() {
