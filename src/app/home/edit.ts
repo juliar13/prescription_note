@@ -1,5 +1,6 @@
 import {Component} from '@angular/core'
 import {OnsenModule, OnsNavigator, Params} from 'ngx-onsenui'
+import {Home} from './home';
 import {ListData} from './list_data'
 import {Datas} from './list_data_sample'
 import * as ons from 'onsenui';
@@ -38,7 +39,11 @@ export class Edit {
     // ホーム画面に戻す
     // 出来ればanimation=liftで
     onCloseClicked() {
-      this._navigator.element.popPage();
+      this._navigator.element.resetToPage(Home,
+        {
+          //animation: 'lift',
+        }
+      );
     }
 
     // 画像をタッチした時に呼び出される
@@ -47,11 +52,10 @@ export class Edit {
       isImgChange: Boolean = this.shootOrAlbum();
       // 画像変更されたなら実行
       if(isImgChange){
-
+        console.log("image changed");
       }else{
-
+        console.log("image not changed (= canceled)");
       }
-
     }
 
     shootOrAlbum(): Boolean {

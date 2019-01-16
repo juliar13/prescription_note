@@ -36,7 +36,12 @@ export class Preview {
     }
 
     onEditClicked(item) {
-      this._navigator.element.pushPage(Edit, {animation: 'simpleslide', data: this.item, }, );
+      this._navigator.element.pushPage(Edit,
+        {
+          animation: 'simpleslide',
+          data: this.item,
+        },
+      );
     }
 
     // onBackClickedに変更すること
