@@ -20,4 +20,8 @@ export class Setting {
   onAccountButtonClicked() {
     this._navigator.element.pushPage(Account, {animation: 'simpleslide'});
   }
+
+  onInquiryClicked() {
+    this._navigator.element.pushPage(InquiryComponent, {animation: 'lift'});
+  }
 }

@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import * as ons from 'onsenui';
 
-import {Home} from './home';
+import {Home} from './home/home';
 import {Setting} from './setting/setting';
 
 @Component({
@@ -23,9 +23,8 @@ export class MainTab {
       (message) => {console.log('error:', message)},
       {
         quality: 50,
-        destinationType: Camera.DestinationType.FILE_URI,
+        destinationType: Camera.DestinationType.DATA_URL,
       }
     )
   }
 }
-
