@@ -21,35 +21,35 @@ export class MainTab {
   ) {}
 
   onPlusButtonClick() {
-    this.addPictureFile(); // ブラウザ動作確認用の処理
+    var ua = navigator.userAgent;
 
-    /*  ブラウザで動作確認用に一時的にコメントアウトしてます。
-    navigator.camera.getPicture(
-      (imageURI) => { 
-        //console.log('image uri', imageURI);
-        this.addPictureFile(imageURI);
-    },
-      (message) => {console.log('error:', message)},
-      {
-        quality: 50,
-        destinationType: Camera.DestinationType.DATA_URL,
-      }
-    )
-    */
+    if (ua.indexOf('iPad') > 0 || ua.indexOf('iPhone') > 0 || ua.indexOf('Android') > 0) {
+      navigator.camera.getPicture(
+        (imageURI) => { 
+          this.addPictureFile(imageURI);
+      },
+        (message) => {console.log('error:', message)},
+        {
+          quality: 50,
+          destinationType: Camera.DestinationType.DATA_URL,
+        }
+      )    
+    } else {
+      var imageURI = "click : "+ new Date();
+      this.addPictureFile(imageURI); 
+    }
   }
 
   addPictureFile(imageURI){
-    if(imageURI === undefined){imageURI = "click: "+new Date();}// ブラウザ動作確認用の処理
 
     Promise.resolve()
-      .then(() => {console.log('add record');})
       .then(() => 
         this._prescriptionRecordRepository.addRecord({
           id: null,
-          createdDate: new Date(2017, 12, 12).toISOString(),
+          createdDate: new Date().toISOString(),
           updatedDate: new Date(2017, 12, 13).toISOString(),
           imagePath: imageURI,
-          note: 'camera',
+          note: '',
         }))
       .then(result => this._prescriptionRecordRepository.getRecords())
       .then(result => console.log('record', result))
