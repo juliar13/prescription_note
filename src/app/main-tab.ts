@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import * as ons from 'onsenui';
 
-import {Home} from './home';
+import {Home} from './home/home';
 import {Setting} from './setting/setting';
 import {PrescriptionRecordRepository} from '../service/prescription-record.repository';
 
@@ -56,4 +56,3 @@ export class MainTab {
       .catch(error => console.log('error', error))
   }
 }
-

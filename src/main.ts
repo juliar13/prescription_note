@@ -2,8 +2,11 @@
 require('onsenui/css/onsen-css-components.css');
 require('onsenui/css/onsenui.css');
 
-// Mizoguchi added for css application
-require('./app/setting/about.css');
+// Yamasaki added for css application
+require('./app/home/home.css');
+require('./app/home/preview.css');
+require('./app/home/edit.css');
+require('./app/app.css');
 
 // Application code starts here
 import {enableProdMode, NgModule, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
@@ -12,10 +15,14 @@ import {HttpModule} from '@angular/http';
 import {OnsenModule} from 'ngx-onsenui';
 
 import {MyApp} from './app/app';
-import {Home} from './app/home';
+import {Home} from './app/home/home';
+import {HomeMain} from './app/home/home-main';
+import {Preview} from './app/home/preview';
+import {Edit} from './app/home/edit';
 import {Setting} from './app/setting/setting';
 import {SettingMain} from './app/setting/setting-main';
 import {About} from './app/setting/about';
+import {InquiryComponent} from './app/setting/inquiry';
 import {MainTab} from './app/main-tab';
 
 // Enable production mode when in production mode.
@@ -31,17 +38,25 @@ if (process.env.NODE_ENV === 'production') {
     declarations: [
         MyApp,
         Home,
+        HomeMain,
+        Preview,
+        Edit,
         Setting,
         SettingMain,
         About,
         MainTab,
+        InquiryComponent,
     ],
     entryComponents: [
         Home,
+        HomeMain,
+        Preview,
+        Edit,
         Setting,
         SettingMain,
         About,
         MainTab,
+        InquiryComponent,
     ],
     bootstrap: [
         MyApp,
