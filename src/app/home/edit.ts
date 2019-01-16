@@ -13,7 +13,6 @@ import * as ons from 'onsenui';
 })
 export class Edit {
 
-
     item: ListData[];
     get_list: ListData[] = Datas;
 
@@ -36,6 +35,8 @@ export class Edit {
       this.get_list.img2 = item.img2;
     }
 
+    // ホーム画面に戻す
+    // 出来ればanimation=liftで
     onCloseClicked() {
       this._navigator.element.popPage();
     }
@@ -43,17 +44,25 @@ export class Edit {
     // 画像をタッチした時に呼び出される
     onImgChange() {
       // 写真撮影かアルバムからか選択する画面を出す
-      this.shootOrAlbum();
+      isImgChange: Boolean = this.shootOrAlbum();
+      // 画像変更されたなら実行
+      if(isImgChange){
+
+      }else{
+
+      }
+
     }
 
-    shootOrAlbum() {
+    shootOrAlbum(): Boolean {
       ons.notification.alert('撮影かアルバム画面になる');
+      return true;
     }
 
     // 登録完了ボタンタッチで呼び出される
     onEditEndClicked() {
       let toast_timeout = 2000; // 2000msec
-      let registration_success: Boolean = this.database_change();
+      let registration_success: Boolean = this.database_update();
       if (registration_success == true) {
         ons.notification.toast('Registration Success !!', {timeout: toast_timeout});
       } else {
@@ -62,8 +71,9 @@ export class Edit {
       }
     }
 
-    database_change():Boolean {
+    database_update():Boolean {
       console.log('database_changing...');
+      // 入力フォームなどにあるデータを更新後データとして更新する
       return true;
     }
 
